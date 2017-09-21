@@ -1684,6 +1684,9 @@ pre .javascript .function {
   max-width: 100%;
   display: inline-block;
   margin: 0.8em 2em 0 2em;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  box-shadow: 0 0 5px rgba(202,203,203,0.5);
 }
 @-moz-keyframes roll {
   from {
@@ -1860,6 +1863,9 @@ pre .javascript .function {
   padding: 20px 10px;
   color: #999;
   text-align: center;
+}
+.links-of-author a::before {
+  background: #fe7878 !important;
 }
 .sidebar-toggle {
   position: fixed;
@@ -2096,7 +2102,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a64eb5;
+  background: #ff791b;
 }
 .links-of-blogroll {
   font-size: 13px;
