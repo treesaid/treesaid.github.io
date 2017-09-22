@@ -60,7 +60,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vue,jquery," />
 
 
 
@@ -78,16 +78,20 @@
 
 
 
-<meta name="description" content="做自己爱做的事，爱自己在做的事！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Memory 〆">
-<meta property="og:url" content="http://yoursite.com/tags/js/index.html">
+<meta name="description" content="出自:  http://www.itnose.net/detail/6647297.html使用vue-cli构建的vue项目，webpack的配置文件是分散在很多地方的，而我们需要修改的是build/webpack.base.conf.js，修改两处的代码">
+<meta name="keywords" content="vue,jquery">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue2.0正确地引用 jquery 和 jquery-ui的插件">
+<meta property="og:url" content="http://yoursite.com/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/index.html">
 <meta property="og:site_name" content="Memory 〆">
-<meta property="og:description" content="做自己爱做的事，爱自己在做的事！">
+<meta property="og:description" content="出自:  http://www.itnose.net/detail/6647297.html使用vue-cli构建的vue项目，webpack的配置文件是分散在很多地方的，而我们需要修改的是build/webpack.base.conf.js，修改两处的代码">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506087396765&di=95111c466218831ceb52def469a6b667&imgtype=0&src=http%3A%2F%2Fjiuye-res.jikexueyuan.com%2Fzhiye%2Fshowcase%2Fattach-6ae2b991-803f-4b63-bda9-89434d70d665.jpg">
+<meta property="og:updated_time" content="2017-09-22T10:50:28.997Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Memory 〆">
-<meta name="twitter:description" content="做自己爱做的事，爱自己在做的事！">
+<meta name="twitter:title" content="vue2.0正确地引用 jquery 和 jquery-ui的插件">
+<meta name="twitter:description" content="出自:  http://www.itnose.net/detail/6647297.html使用vue-cli构建的vue项目，webpack的配置文件是分散在很多地方的，而我们需要修改的是build/webpack.base.conf.js，修改两处的代码">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506087396765&di=95111c466218831ceb52def469a6b667&imgtype=0&src=http%3A%2F%2Fjiuye-res.jikexueyuan.com%2Fzhiye%2Fshowcase%2Fattach-6ae2b991-803f-4b63-bda9-89434d70d665.jpg">
 
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/js/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/"/>
 
 
 
 
 
-  <title>标签: js | Memory 〆</title>
+  <title>vue2.0正确地引用 jquery 和 jquery-ui的插件 | Memory 〆</title>
   
 
 
@@ -152,7 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/treesaid"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -290,54 +294,280 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>js<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XuJianing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/xjn_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Memory 〆">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/09/22/this、call、apply、bind/" itemprop="url">
-              
-                <span itemprop="name">this、call、apply、bind</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">vue2.0正确地引用 jquery 和 jquery-ui的插件</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-22T15:48:16+08:00"
-              content="2017-09-22" >
-          09-22
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-22T18:41:28+08:00">
+                2017-09-22
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vue/" itemprop="url" rel="index">
+                    <span itemprop="name">vue</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  286
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1506087396765&amp;di=95111c466218831ceb52def469a6b667&amp;imgtype=0&amp;src=http%3A%2F%2Fjiuye-res.jikexueyuan.com%2Fzhiye%2Fshowcase%2Fattach-6ae2b991-803f-4b63-bda9-89434d70d665.jpg" alt=""><br>出自:  <a href="http://www.itnose.net/detail/6647297.html" target="_blank" rel="external">http://www.itnose.net/detail/6647297.html</a><br>使用vue-cli构建的vue项目，webpack的配置文件是分散在很多地方的，而我们需要修改的是build/webpack.base.conf.js，修改两处的代码<br><a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">// 在开头引入webpack，后面的plugins那里需要</div><div class="line">var webpack = require(<span class="string">'webpack'</span>)</div><div class="line">// resolve</div><div class="line"></div><div class="line">module.exports = &#123;</div><div class="line">   // 其他代码...</div><div class="line">   resolve: &#123;</div><div class="line">      extensions: [<span class="string">''</span>, <span class="string">'.js'</span>, <span class="string">'.vue'</span>],</div><div class="line">      fallback: [path.join(__dirname, <span class="string">'../node_modules'</span>)],</div><div class="line">      <span class="built_in">alias</span>: &#123;</div><div class="line">          <span class="string">'src'</span>: path.resolve(__dirname, <span class="string">'../src'</span>),</div><div class="line">          <span class="string">'assets'</span>: path.resolve(__dirname, <span class="string">'../src/assets'</span>),</div><div class="line">          <span class="string">'components'</span>: path.resolve(__dirname, <span class="string">'../src/components'</span>),</div><div class="line"></div><div class="line">          // webpack 使用 jQuery，如果是自行下载的</div><div class="line">          // <span class="string">'jquery'</span>: path.resolve(__dirname, <span class="string">'../src/assets/libs/jquery/jquery.min'</span>),</div><div class="line">          // 如果使用NPM安装的jQuery</div><div class="line">          <span class="string">'jquery'</span>: <span class="string">'jquery'</span> </div><div class="line">      &#125;</div><div class="line">   &#125;,</div><div class="line"></div><div class="line">   // 增加一个plugins</div><div class="line">   plugins: [</div><div class="line">      new webpack.ProvidePlugin(&#123;</div><div class="line">          $: <span class="string">"jquery"</span>,</div><div class="line">          jQuery: <span class="string">"jquery"</span></div><div class="line">      &#125;)</div><div class="line">   ],</div><div class="line"></div><div class="line">   // 其他代码...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这样就可以正确的使用jQuery了，比如我要引入Bootstrap，我们在vue的入口js文件src/main.js开头加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">// 使用Bootstrap</div><div class="line">import <span class="string">'./assets/libs/bootstrap/css/bootstrap.min.css'</span></div><div class="line">import <span class="string">'./assets/libs/bootstrap/js/bootstrap.min'</span></div></pre></td></tr></table></figure></p>
+<h4 id="vue-cli-webpack全局引入jquery"><a href="#vue-cli-webpack全局引入jquery" class="headerlink" title="vue-cli webpack全局引入jquery"></a>vue-cli webpack全局引入jquery</h4><p>首先在package.json里加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">dependencies:&#123;</div><div class="line"> <span class="string">"jquery"</span> : <span class="string">"^2.2.3"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>然后 nmp install  </p>
+<p>在webpack.base.conf.js里加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var webpack = require(<span class="string">"webpack"</span>)</div></pre></td></tr></table></figure></p>
+<p>在module.exports的最后加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">plugins: [</div><div class="line"> new webpack.optimize.CommonsChunkPlugin(<span class="string">'common.js'</span>),</div><div class="line"> new webpack.ProvidePlugin(&#123;</div><div class="line">     jQuery: <span class="string">"jquery"</span>,</div><div class="line">     $: <span class="string">"jquery"</span></div><div class="line"> &#125;)</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<p>然后一定要重新 run dev<br>在main.js 引入就ok了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import $ from <span class="string">'jquery'</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
+    
+    
+    
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
 
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>本文标题:</span><a href="/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/">vue2.0正确地引用 jquery 和 jquery-ui的插件</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 XuJianing 的个人博客">XuJianing</a></p>
+  <p><span>发布时间:</span>2017年09月22日 - 18:09</p>
+  <p><span>最后更新:</span>2017年09月22日 - 18:09</p>
+  <p><span>原始链接:</span><a href="/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/" title="vue2.0正确地引用 jquery 和 jquery-ui的插件">http://yoursite.com/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+        
+    </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/weixin.png" alt="XuJianing 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="XuJianing 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag"><i class="fa fa-tag"></i> vue</a>
+          
+            <a href="/tags/jquery/" rel="tag"><i class="fa fa-tag"></i> jquery</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/22/this、call、apply、bind/" rel="next" title="this、call、apply、bind">
+                <i class="fa fa-chevron-left"></i> this、call、apply、bind
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -345,6 +575,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDk4MS83NTMw"></div>
+    
+  </div>
+
 
         </div>
         
@@ -365,8 +601,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -510,6 +755,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#vue-cli-webpack全局引入jquery"><span class="nav-number">1.</span> <span class="nav-text">vue-cli webpack全局引入jquery</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -680,6 +941,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
