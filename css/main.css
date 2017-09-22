@@ -2102,7 +2102,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #471d4f;
+  background: #ff1b83;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3233,5 +3233,14 @@ pre {
   text-align: center;
 }
 .post-button {
+  text-align: center;
+}
+.category-all-page .category-list-item a {
+  font-size: 16px;
+}
+.tag-cloud-tags a {
+  color: #fe7878 !important;
+}
+.container .footer-inner {
   text-align: center;
 }
