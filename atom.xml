@@ -5,9 +5,9 @@
   <subtitle>Once reality now it’s just a memory.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://xjnblog.site/"/>
   <updated>2017-09-22T10:50:28.997Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://xjnblog.site/</id>
   
   <author>
     <name>XuJianing</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>vue2.0正确地引用 jquery 和 jquery-ui的插件</title>
-    <link href="http://yoursite.com/2017/09/22/vue2-0%E6%AD%A3%E7%A1%AE%E5%9C%B0%E5%BC%95%E7%94%A8-jquery-%E5%92%8C-jquery-ui%E7%9A%84%E6%8F%92%E4%BB%B6/"/>
-    <id>http://yoursite.com/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/</id>
+    <link href="http://xjnblog.site/2017/09/22/vue2-0%E6%AD%A3%E7%A1%AE%E5%9C%B0%E5%BC%95%E7%94%A8-jquery-%E5%92%8C-jquery-ui%E7%9A%84%E6%8F%92%E4%BB%B6/"/>
+    <id>http://xjnblog.site/2017/09/22/vue2-0正确地引用-jquery-和-jquery-ui的插件/</id>
     <published>2017-09-22T10:41:28.000Z</published>
     <updated>2017-09-22T10:50:28.997Z</updated>
     
@@ -31,19 +31,19 @@
     
     </summary>
     
-      <category term="vue" scheme="http://yoursite.com/categories/vue/"/>
+      <category term="vue" scheme="http://xjnblog.site/categories/vue/"/>
     
     
-      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+      <category term="vue" scheme="http://xjnblog.site/tags/vue/"/>
     
-      <category term="jquery" scheme="http://yoursite.com/tags/jquery/"/>
+      <category term="jquery" scheme="http://xjnblog.site/tags/jquery/"/>
     
   </entry>
   
   <entry>
     <title>this、call、apply、bind</title>
-    <link href="http://yoursite.com/2017/09/22/this%E3%80%81call%E3%80%81apply%E3%80%81bind/"/>
-    <id>http://yoursite.com/2017/09/22/this、call、apply、bind/</id>
+    <link href="http://xjnblog.site/2017/09/22/this%E3%80%81call%E3%80%81apply%E3%80%81bind/"/>
+    <id>http://xjnblog.site/2017/09/22/this、call、apply、bind/</id>
     <published>2017-09-22T07:48:16.000Z</published>
     <updated>2017-09-22T11:37:47.336Z</updated>
     
@@ -56,16 +56,16 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://xjnblog.site/categories/JavaScript/"/>
     
     
-      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+      <category term="vue" scheme="http://xjnblog.site/tags/vue/"/>
     
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+      <category term="js" scheme="http://xjnblog.site/tags/js/"/>
     
-      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="http://xjnblog.site/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="原声js" scheme="http://yoursite.com/tags/%E5%8E%9F%E5%A3%B0js/"/>
+      <category term="原声js" scheme="http://xjnblog.site/tags/%E5%8E%9F%E5%A3%B0js/"/>
     
   </entry>
   
