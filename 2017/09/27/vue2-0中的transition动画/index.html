@@ -78,18 +78,18 @@
 
 
 
-<meta name="description" content="总括： transition 之前只是作为元素的一个属性，到了2.0以后 transition成为了一个组件，也就意味着有更多的功能123&amp;lt;transition name=&quot;fade&quot;&amp;gt;    运动的东西(html元素、属性、路由...)&amp;lt;/transition&amp;gt; class定义：123456789101112131415161718.fade-enter-active,">
+<meta name="description" content="总括： transition 之前只是作为元素的一个属性，到了2.0以后 transition成为了一个组件，也就意味着有更多的功能123&amp;lt;transition name=&quot;fade&quot;&amp;gt;    运动的东西(html元素、属性、路由...)&amp;lt;/transition&amp;gt;">
 <meta name="keywords" content="vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue2.0中的transition动画">
 <meta property="og:url" content="http://xjnblog.site/2017/09/27/vue2-0中的transition动画/index.html">
 <meta property="og:site_name" content="Memory 〆">
-<meta property="og:description" content="总括： transition 之前只是作为元素的一个属性，到了2.0以后 transition成为了一个组件，也就意味着有更多的功能123&amp;lt;transition name=&quot;fade&quot;&amp;gt;    运动的东西(html元素、属性、路由...)&amp;lt;/transition&amp;gt; class定义：123456789101112131415161718.fade-enter-active,">
+<meta property="og:description" content="总括： transition 之前只是作为元素的一个属性，到了2.0以后 transition成为了一个组件，也就意味着有更多的功能123&amp;lt;transition name=&quot;fade&quot;&amp;gt;    运动的东西(html元素、属性、路由...)&amp;lt;/transition&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-27T03:24:52.000Z">
+<meta property="og:updated_time" content="2017-09-27T03:29:19.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue2.0中的transition动画">
-<meta name="twitter:description" content="总括： transition 之前只是作为元素的一个属性，到了2.0以后 transition成为了一个组件，也就意味着有更多的功能123&amp;lt;transition name=&quot;fade&quot;&amp;gt;    运动的东西(html元素、属性、路由...)&amp;lt;/transition&amp;gt; class定义：123456789101112131415161718.fade-enter-active,">
+<meta name="twitter:description" content="总括： transition 之前只是作为元素的一个属性，到了2.0以后 transition成为了一个组件，也就意味着有更多的功能123&amp;lt;transition name=&quot;fade&quot;&amp;gt;    运动的东西(html元素、属性、路由...)&amp;lt;/transition&amp;gt;">
 
 
 
@@ -428,6 +428,7 @@
       
         <hr>
 <p><strong>总括：</strong> transition 之前只是作为元素的一个属性，到了2.0以后 transition成为了一个组件，也就意味着有更多的功能<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;transition name=<span class="string">"fade"</span>&gt;</div><div class="line">    运动的东西(html元素、属性、路由...)</div><div class="line">&lt;/transition&gt;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h4 id="class定义："><a href="#class定义：" class="headerlink" title="class定义："></a>class定义：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">.fade-enter-active,.fade-leave-active&#123;</div><div class="line">    transition:1s all ease;</div><div class="line">&#125;</div><div class="line">.fade-enter-active&#123;     //变成什么样子-&gt;当元素出来（显示）</div><div class="line">    opactiy:1;</div><div class="line">    width:300px;</div><div class="line">    height:300px;</div><div class="line">&#125;  </div><div class="line">.fade-leave-active&#123;      //当元素离开（消失）</div><div class="line">    width:100px;</div><div class="line">    height:100px;</div><div class="line">    opacity:0</div><div class="line">&#125;</div><div class="line">.fade-enter, .fade-leave&#123;           //初始的状态</div><div class="line">    width:100px;</div><div class="line">    height:100px;</div><div class="line">    opacity:0</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="transition-相关函数的接口"><a href="#transition-相关函数的接口" class="headerlink" title="transition 相关函数的接口"></a>transition 相关函数的接口</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">methods:&#123;</div><div class="line">    afterLeave(el)&#123;</div><div class="line">        el.style.background:<span class="string">'red'</span></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">@before-enter=<span class="string">"beforEnter"</span>   动画enter之前</div><div class="line">@enter=<span class="string">"enter"</span>               动画enter</div><div class="line">@afterEnter=<span class="string">"afterEnter"</span>     动画enter之后</div><div class="line">@before-leave=<span class="string">"beforeLeave"</span>  动画leave之前</div><div class="line">@leave=<span class="string">"leave"</span>               动画leave</div><div class="line">@afterLeave=<span class="string">"afterLeave"</span>     动画leave之后</div><div class="line">&lt;transition name=<span class="string">"fade"</span> @before-enter=<span class="string">"beforeEnter"</span> @enter=<span class="string">"enter"</span> @after-enter=<span class="string">"afterEnter"</span> &gt;</div><div class="line"></div><div class="line">&lt;/transition&gt;</div></pre></td></tr></table></figure>
 <h4 id="如何配合animate-css-使用"><a href="#如何配合animate-css-使用" class="headerlink" title="如何配合animate.css 使用"></a>如何配合animate.css 使用</h4><p>详细的动画效果参考：<a href="https://daneden.github.io/animate.css/" target="_blank" rel="external">Animate.css官网</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> <span class="built_in">type</span>=<span class="string">"text/css"</span> href=<span class="string">"animate.css"</span> /&gt;</div><div class="line">&lt;transition enter-active-class=<span class="string">"bounceInLeft"</span> leave-active-class=<span class="string">"bounceOutRight"</span>&gt;</div><div class="line">    &lt;p class=<span class="string">"animtaed"</span>&gt;&lt;/p&gt;</div><div class="line">&lt;/transition&gt;</div><div class="line">//放大效果 zoomInLeft  zoomOutRight</div></pre></td></tr></table></figure></p>
@@ -637,7 +638,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
