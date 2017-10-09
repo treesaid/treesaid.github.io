@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xjnblog.site/"/>
-  <updated>2017-09-27T03:29:19.575Z</updated>
+  <updated>2017-10-09T03:26:17.786Z</updated>
   <id>http://xjnblog.site/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何将vue初始项目发布到github上</title>
+    <link href="http://xjnblog.site/2017/10/09/%E5%A6%82%E4%BD%95%E5%B0%86vue%E5%88%9D%E5%A7%8B%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github%E4%B8%8A/"/>
+    <id>http://xjnblog.site/2017/10/09/如何将vue初始项目发布到github上/</id>
+    <published>2017-10-09T03:03:09.000Z</published>
+    <updated>2017-10-09T03:26:17.786Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h3 id="一、vue项目的创建"><a href="#一、vue项目的创建" class="headerlink" title="一、vue项目的创建"></a>一、vue项目的创建</h3><ol><li>首先第一肯定是要有Node.js及npm这个不多说了  </li><li>安装脚手架<br><img src="/2017/10/09/如何将vue初始项目发布到github上/vue-cli.png" alt=""><a id="more"></a><ul><li>此时可以直接浏览<br>-但是现在肯定有很多小白想将他发布到gitHub上并可以浏览，使用vue全家桶制作自己的博客。</li><li>现在就有我来说说如何讲vue项目发布到<code>github</code>上  </li></ul></li></ol><h3 id="二、vue项目的打包"><a href="#二、vue项目的打包" class="headerlink" title="二、vue项目的打包"></a>二、vue项目的打包</h3><p>大家都知道使用<code>npm run build</code>进行打包，这个时候你直接打开<code>dist/</code>下的<code>index.html</code>,会发现文件可以打开，但是所有的<code>js</code>，<code>css</code>，<code>img</code>等路径有问题是指向根目录的，此时需要修改<code>config/index.js</code>里的<code>assetsPublicPath</code>的字段，初始项目是<code>/</code>他是指向项目根目录的也是为什么会出现错误，这时改为<code>./</code>    </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">build: &#123;</div><div class="line">    env: require(<span class="string">'./prod.env'</span>),</div><div class="line">    index: path.resolve(__dirname, <span class="string">'../dist/index.html'</span>),</div><div class="line">    assetsRoot: path.resolve(__dirname, <span class="string">'../dist'</span>),</div><div class="line">    assetsSubDirectory: <span class="string">'static'</span>,</div><div class="line">    assetsPublicPath: <span class="string">'./'</span>,</div><div class="line">    productionSourceMap: <span class="literal">true</span>,</div><div class="line">    // Gzip off by default as many popular static hosts such as</div><div class="line">    // Surge or Netlify already gzip all static assets <span class="keyword">for</span> you.</div><div class="line">    // Before setting to `<span class="literal">true</span>`, make sure to:</div><div class="line">    // npm install --save-dev compression-webpack-plugin</div><div class="line">    productionGzip: <span class="literal">false</span>,</div><div class="line">    productionGzipExtensions: [<span class="string">'js'</span>, <span class="string">'css'</span>],</div><div class="line">    // Run the build <span class="built_in">command</span> with an extra argument to</div><div class="line">    // View the bundle analyzer report after build finishes:</div><div class="line">    // `npm run build --report`</div><div class="line">    // Set to `<span class="literal">true</span>` or `<span class="literal">false</span>` to always turn it on or off</div><div class="line">    bundleAnalyzerReport: process.env.npm_config_report</div><div class="line">  &#125;</div></pre></td></tr></table></figure><ul><li>在从dist根目录打开index文件就可以访问了。</li></ul><h3 id="三、github-pages"><a href="#三、github-pages" class="headerlink" title="三、github pages"></a>三、github pages</h3><ol><li>首页创建一个仓库，此处直接忽略<br><img src="/2017/10/09/如何将vue初始项目发布到github上/gitpages.png" alt="">  </li><li>在这里选择master或者/doc 上传代码到master<br><img src="/2017/10/09/如何将vue初始项目发布到github上/gitpush.png" alt="">  </li><li>上面有一行域名就是你自己的页面可以看到自己发布的项目<br><img src="/2017/10/09/如何将vue初始项目发布到github上/yourdemo.png" alt="">  </li></ol><h3 id="四、自定义域名"><a href="#四、自定义域名" class="headerlink" title="四、自定义域名"></a>四、自定义域名</h3><p>这个时候就可以浏览自己的项目了，但是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">username.github.io/xxx/dist  </div><div class="line">这样的地址着实不是很美观，大家可以去阿里云上，自己买个域名，解析一下，网上都有，可以进行自定义的域名，来制作的自己的博客，</div><div class="line">代码部署到github上。这篇文章这里就先不做讲解了，有想使用自定义域名，也可以私信我。</div></pre></td></tr></table></figure></p><p>原文地址：<a href="https://segmentfault.com/a/1190000009527796" target="_blank" rel="external">https://segmentfault.com/a/1190000009527796</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h3 id=&quot;一、vue项目的创建&quot;&gt;&lt;a href=&quot;#一、vue项目的创建&quot; class=&quot;headerlink&quot; title=&quot;一、vue项目的创建&quot;&gt;&lt;/a&gt;一、vue项目的创建&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;首先第一肯定是要有Node.js及npm这个不多说了  &lt;/li&gt;
+&lt;li&gt;安装脚手架&lt;br&gt;&lt;img src=&quot;/2017/10/09/如何将vue初始项目发布到github上/vue-cli.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="vue" scheme="http://xjnblog.site/categories/vue/"/>
+    
+    
+      <category term="js" scheme="http://xjnblog.site/tags/js/"/>
+    
+      <category term="vue" scheme="http://xjnblog.site/tags/vue/"/>
+    
+      <category term="前端" scheme="http://xjnblog.site/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue-cli" scheme="http://xjnblog.site/tags/vue-cli/"/>
+    
+  </entry>
   
   <entry>
     <title>vue2.0中的transition动画</title>
@@ -135,9 +166,9 @@
       <category term="css" scheme="http://xjnblog.site/categories/css/"/>
     
     
-      <category term="css" scheme="http://xjnblog.site/tags/css/"/>
-    
       <category term="less" scheme="http://xjnblog.site/tags/less/"/>
+    
+      <category term="css" scheme="http://xjnblog.site/tags/css/"/>
     
   </entry>
   
